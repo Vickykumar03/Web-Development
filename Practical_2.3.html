@@ -1,0 +1,63 @@
+<!-- demonstrate the use of different CSS selectors(class,id,descendant,group,universal) <!DOCTYPE html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Selectors Example</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    h1, h2, p {
+      color: rgba(247, 3, 223, 0.82);
+    }
+
+    .highlight {
+      background-color: pink;
+      font-weight: bold;
+      padding: 5px;
+    }
+
+    #unique-title {
+      color: rgba(141, 3, 247, 0.82);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    p span {
+      color: orange;
+      font-style: italic;
+    }
+
+    body {
+      margin: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1 id="unique-title">Welcome to My First Web Page</h1>
+
+  <h2>I will use CSS selectors to style this page</h2>
+
+  <p>
+    This paragraph is styled using the
+    <span>group selector</span> applied to h1, h2, and p.
+  </p>
+
+  <p class="highlight">
+    This paragraph uses the <span>class selector</span>.
+    The highlighted text shows how class works.
+  </p>
+
+  <p>
+    This is a normal paragraph with a
+    <span>descendant selector example</span>.
+  </p>
+
+</body>
+</html>

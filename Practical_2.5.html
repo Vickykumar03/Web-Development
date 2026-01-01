@@ -1,0 +1,89 @@
+<!-- Use div and span elements for layout and apply styling with CSS -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div and Span Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            padding: 15px;
+            line-height: 1.6;
+        }
+
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+            padding: 2px 4px;
+        }
+
+        .important {
+            color: red;
+            font-style: italic;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>Welcome to My Page</h1>
+    </div>
+
+    <div class="content">
+        <p>
+            This is a <span class="highlight">simple example</span>
+            showing how div and span elements are used.
+        </p>
+
+        <p>
+            The <span class="important">span element</span> is used
+            for inline styling inside text.
+        </p>
+
+        <p>
+            Div elements are used to create
+            <span class="highlight">sections</span> of a web page.
+        </p>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2026 Vicky Kumar</p>
+    </div>
+
+</div>
+</body>
+</html>
