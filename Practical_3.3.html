@@ -1,0 +1,38 @@
+<!-- Create and invoke user-defined functions in JavaScript;use var,let and const for scope demonstration -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Scopic demonstration of different kind of keywords</p>
+    <script>
+        function localScope(){
+            let a=5;
+            const b="Hii!";
+            var c="All the best";
+
+        console.log("At first");
+            console.log("a = ",a);
+            console.log("b = ",b);
+            console.log("c = ",c);
+        {
+            let a=1;
+            const b="Hello";
+            var c="Good Morning";
+            console.log("Inside Block");
+            console.log("a = ",a);
+            console.log("b = ",b);
+            console.log("c = ",c);
+             }
+        console.log("Outside Block");
+            console.log("a = ",a);
+            console.log("b = ",b);
+            console.log("c = ",c); //var will change as it is function scopic and not local scopic
+            }
+    localScope();
+    </script>
+</body>
+</html>

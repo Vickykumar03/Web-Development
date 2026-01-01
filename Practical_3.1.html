@@ -1,0 +1,28 @@
+<!--Create a JavaScript-enabled web page that performs basic arithmetic operations using input from users.-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>taking input from user</title>
+    </head>
+    <body>
+        <script>
+            let p=parseFloat(prompt("Enter 1st number"));
+            let q=parseFloat(prompt("Enter 2nd number"));
+
+            if(isNaN(p) || isNaN(q)){
+                document.write("please enter correct integers")
+            }
+            else{
+            let add=p+q;
+            let sub=p-q;
+            let mult=p*q;
+            let div=q!==0?(p/q) : "undefined(Not divisible by zero)";
+
+            document.write("Addition is "+add+ "<br>" +"Subtraction is "
+                +sub+ "<br>" +"Multiplication is "+mult+"<br>"+"division is "+ div);
+            }
+        </script>
+    </body>
+</html>
+
+

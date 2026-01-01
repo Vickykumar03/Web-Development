@@ -1,0 +1,27 @@
+<!--2.5.Find whether the number given by user is prime or not-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>prime or not</title>
+    </head>
+    <body>
+        <p>Check whether the number is prime or not</p>
+        <script>
+            let n=parseInt(prompt("Enter any number"));
+            let sum=0;
+            
+            for(let i=1;i<=n;i++){
+                if(n%i==0){
+                    sum+=1;
+                }
+            }
+            if(sum>2){
+                document.write("Not prime");
+            }
+            else{
+                document.write("Prime");
+            }
+        </script>
+    </body>
+</html>
+
