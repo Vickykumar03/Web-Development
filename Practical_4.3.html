@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Manipulation</title>
+
+  <style>
+    #container {
+      border: 2px solid black;
+      padding: 10px;
+      width: 300px;
+    }
+
+    .item {
+      background: lightblue;
+      margin: 5px 0;
+      padding: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <button id="add">Add Item</button>
+  <button id="remove">Remove Last Item</button>
+  <button id="change">Modify First Item</button>
+
+  <div id="container"></div>
+
+  
+  <script>
+    const container = document.getElementById("container");
+
+    //CREATE + APPEND ELEMENT
+    document.getElementById("add").addEventListener("click", () => {
+      const newDiv = document.createElement("div");   
+      newDiv.className = "item";                       
+      newDiv.innerText = "New Item";                   
+
+      container.appendChild(newDiv);                  
+    });
+
+    //REMOVE CHILD ELEMENT
+    document.getElementById("remove").addEventListener("click", () => {
+      if (container.lastChild) {
+        container.removeChild(container.lastChild);
+      }
+    });
+
+    // MODIFY CHILD ELEMENT
+    document.getElementById("change").addEventListener("click", () => {
+      if (container.firstChild) {
+        container.firstChild.innerText = "Modified Item";
+        container.firstChild.style.background = "lightgreen";
+      }
+    });
+  </script>
+
+</body>
+</html>
