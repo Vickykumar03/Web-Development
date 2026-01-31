@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Toggle Example</title>
+
+  <style>
+    #box {
+      width: 200px;
+      height: 100px;
+      background-color: aquamarine;
+      color: black;
+      margin-top: 10px;
+    }
+
+    #btn{
+        background-color: whitesmoke;
+        color: black;
+        border: 2px solid black;
+    }
+    .hide {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <button id="btn">Toggle Box</button>
+  <div id="box">Hello, I am a box</div>
+
+  <script>
+    const btn = document.getElementById("btn");
+    const box = document.getElementById("box");
+
+    btn.addEventListener("click", function () {
+      box.classList.toggle("hide");
+    });
+  </script>
+
+</body>
+</html>
